@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="CruiseControl" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="CruiseControl" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About CruiseControl" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                            <connections>
+                                                <action selector="didHitPrefs:" target="Voe-Tx-rLC" id="LKq-de-cWV"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide CruiseControl" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit CruiseControl" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Cruise_Control" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController storyboardIdentifier="CruiseControlPreferencesWindow" showSeguePresentationStyle="single" id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Cruise Control Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="400" height="300"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--Preferences View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="PreferencesViewController" customModule="Cruise_Control" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="442" height="228"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Egw-mq-wc4">
+                                <rect key="frame" x="104" y="194" width="51" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Trigger:" id="75N-nn-3pc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0uA-hL-5FA">
+                                <rect key="frame" x="159" y="188" width="125" height="25"/>
+                                <popUpButtonCell key="cell" type="push" title="Both" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" selectedItem="C9y-Bg-gNc" id="GYA-Le-n72">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="nK9-JL-jVt">
+                                        <items>
+                                            <menuItem title="Both" state="on" id="C9y-Bg-gNc"/>
+                                            <menuItem title="Caps Lock On" id="f4s-2k-poz"/>
+                                            <menuItem title="Caps Lock Off" id="WaC-RD-4CX"/>
+                                            <menuItem title="Disabled" id="iWw-D2-EnD"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="didChangeNotifyBehavior:" target="XfG-lQ-9wD" id="a1k-xs-bYI"/>
+                                </connections>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jWW-EP-Zk5">
+                                <rect key="frame" x="287" y="194" width="137" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Notifications Disabled" id="Dag-SI-V32">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xa4-8N-mZ7">
+                                <rect key="frame" x="35" y="163" width="120" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Notification Sound:" id="DWM-NK-5hV">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0xl-4G-Sgs">
+                                <rect key="frame" x="159" y="157" width="125" height="25"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="tbT-d3-nBT" id="4CU-Jg-dBw" userLabel="Default">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="TNp-D2-wv2">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="tbT-d3-nBT"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="didChangeNotificationSound:" target="XfG-lQ-9wD" id="PAN-qo-XeW"/>
+                                </connections>
+                            </popUpButton>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="OHG-sj-bre">
+                                <rect key="frame" x="20" y="141" width="402" height="5"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kgR-aU-wSU">
+                                <rect key="frame" x="93" y="112" width="62" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Interface:" id="nvA-eB-fqW">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m0E-ap-fqN">
+                                <rect key="frame" x="159" y="91" width="221" height="18"/>
+                                <buttonCell key="cell" type="check" title="Use black &amp; white menu bar icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="j0w-6z-Ift">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didChangeColorIcon:" target="XfG-lQ-9wD" id="IFh-pi-VuI"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yMd-Uy-bT8">
+                                <rect key="frame" x="102" y="62" width="53" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Startup:" id="25i-qn-Mni">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sa2-vP-heR">
+                                <rect key="frame" x="159" y="61" width="188" height="18"/>
+                                <buttonCell key="cell" type="check" title="Open automatically at login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="pzD-fp-B0K">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didChangeLaunchAtLogin:" target="XfG-lQ-9wD" id="WSq-ug-1so"/>
+                                </connections>
+                            </button>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="X2Q-64-7Ga">
+                                <rect key="frame" x="20" y="44" width="402" height="5"/>
+                            </box>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AtN-Ha-tjF">
+                                <rect key="frame" x="76" y="16" width="290" height="14"/>
+                                <buttonCell key="cell" type="inline" title="Icon made by Smashicons from www.flaticon.com" bezelStyle="inline" alignment="center" imageScaling="proportionallyDown" inset="2" id="JqD-3T-dPh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didClickAttributionLink:" target="XfG-lQ-9wD" id="bI4-99-1WK"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FAj-6p-qrM">
+                                <rect key="frame" x="159" y="111" width="145" height="18"/>
+                                <buttonCell key="cell" type="check" title="Show menu bar icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="M19-4f-k5b">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didChangeMenuBarIcon:" target="XfG-lQ-9wD" id="MXX-1R-ANL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0xl-4G-Sgs" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="0VE-oc-22b"/>
+                            <constraint firstItem="OHG-sj-bre" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="1Gv-96-AJK"/>
+                            <constraint firstItem="AtN-Ha-tjF" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="1t0-ZQ-gW4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m0E-ap-fqN" secondAttribute="trailing" constant="20" symbolic="YES" id="3U5-Og-Gus"/>
+                            <constraint firstItem="0uA-hL-5FA" firstAttribute="leading" secondItem="Egw-mq-wc4" secondAttribute="trailing" constant="8" symbolic="YES" id="3cH-Tj-pGV"/>
+                            <constraint firstAttribute="bottom" secondItem="AtN-Ha-tjF" secondAttribute="bottom" constant="16" id="4h0-2W-8rQ"/>
+                            <constraint firstAttribute="trailing" secondItem="X2Q-64-7Ga" secondAttribute="trailing" constant="20" symbolic="YES" id="4la-C2-lfL"/>
+                            <constraint firstItem="FAj-6p-qrM" firstAttribute="leading" secondItem="0xl-4G-Sgs" secondAttribute="leading" id="9Qe-Sj-qyE"/>
+                            <constraint firstItem="jWW-EP-Zk5" firstAttribute="firstBaseline" secondItem="0uA-hL-5FA" secondAttribute="firstBaseline" id="ABe-lO-bRe"/>
+                            <constraint firstAttribute="trailing" secondItem="jWW-EP-Zk5" secondAttribute="trailing" constant="20" symbolic="YES" id="Acw-yJ-663"/>
+                            <constraint firstItem="m0E-ap-fqN" firstAttribute="top" secondItem="FAj-6p-qrM" secondAttribute="bottom" constant="6" symbolic="YES" id="BF8-e8-XZz"/>
+                            <constraint firstItem="kgR-aU-wSU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="Cdg-bD-wGG"/>
+                            <constraint firstItem="Xa4-8N-mZ7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="Iy1-ZS-klT"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sa2-vP-heR" secondAttribute="trailing" constant="20" symbolic="YES" id="Izq-er-GBa"/>
+                            <constraint firstItem="0xl-4G-Sgs" firstAttribute="top" secondItem="0uA-hL-5FA" secondAttribute="bottom" constant="10" symbolic="YES" id="JaZ-Al-5ge"/>
+                            <constraint firstItem="yMd-Uy-bT8" firstAttribute="firstBaseline" secondItem="Sa2-vP-heR" secondAttribute="firstBaseline" id="L3Z-88-3A9"/>
+                            <constraint firstItem="OHG-sj-bre" firstAttribute="top" secondItem="0xl-4G-Sgs" secondAttribute="bottom" constant="16" id="MQ0-32-d9O"/>
+                            <constraint firstItem="0uA-hL-5FA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="16" id="NDC-0l-dZi"/>
+                            <constraint firstItem="0uA-hL-5FA" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="NWK-6P-h68"/>
+                            <constraint firstAttribute="trailing" secondItem="OHG-sj-bre" secondAttribute="trailing" constant="20" symbolic="YES" id="Nyl-vJ-JQU"/>
+                            <constraint firstItem="Egw-mq-wc4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="ODA-Kv-MLp"/>
+                            <constraint firstItem="AtN-Ha-tjF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="OFd-Pn-dKW"/>
+                            <constraint firstItem="yMd-Uy-bT8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="OhJ-NV-fMy"/>
+                            <constraint firstItem="X2Q-64-7Ga" firstAttribute="top" secondItem="Sa2-vP-heR" secondAttribute="bottom" constant="16" id="QDi-vL-3yU"/>
+                            <constraint firstItem="AtN-Ha-tjF" firstAttribute="top" secondItem="X2Q-64-7Ga" secondAttribute="bottom" constant="16" id="RY3-Ik-4Iu"/>
+                            <constraint firstItem="FAj-6p-qrM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="SNe-8A-pls"/>
+                            <constraint firstItem="FAj-6p-qrM" firstAttribute="leading" secondItem="kgR-aU-wSU" secondAttribute="trailing" constant="8" symbolic="YES" id="Skn-he-Bau"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FAj-6p-qrM" secondAttribute="trailing" constant="20" symbolic="YES" id="Tzo-dI-Azx"/>
+                            <constraint firstItem="m0E-ap-fqN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="U8n-Zg-Ct2"/>
+                            <constraint firstItem="FAj-6p-qrM" firstAttribute="firstBaseline" secondItem="kgR-aU-wSU" secondAttribute="firstBaseline" id="YPq-pP-yWN"/>
+                            <constraint firstItem="Sa2-vP-heR" firstAttribute="top" secondItem="m0E-ap-fqN" secondAttribute="bottom" constant="16" id="ZjW-hF-wNM"/>
+                            <constraint firstItem="Sa2-vP-heR" firstAttribute="leading" secondItem="yMd-Uy-bT8" secondAttribute="trailing" constant="8" symbolic="YES" id="aKt-u5-MBZ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AtN-Ha-tjF" secondAttribute="trailing" constant="20" symbolic="YES" id="aVh-bo-D90"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0uA-hL-5FA" secondAttribute="trailing" constant="20" symbolic="YES" id="biZ-Wz-vch"/>
+                            <constraint firstItem="0xl-4G-Sgs" firstAttribute="width" secondItem="0uA-hL-5FA" secondAttribute="width" id="ei6-Pq-3t1"/>
+                            <constraint firstItem="Sa2-vP-heR" firstAttribute="leading" secondItem="m0E-ap-fqN" secondAttribute="leading" id="fQj-Ib-AyV"/>
+                            <constraint firstItem="0xl-4G-Sgs" firstAttribute="leading" secondItem="Xa4-8N-mZ7" secondAttribute="trailing" constant="8" symbolic="YES" id="flG-Yw-vbR"/>
+                            <constraint firstItem="X2Q-64-7Ga" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="foc-9F-tRl"/>
+                            <constraint firstItem="FAj-6p-qrM" firstAttribute="top" secondItem="OHG-sj-bre" secondAttribute="bottom" constant="16" id="ftp-Pe-OJm"/>
+                            <constraint firstItem="0xl-4G-Sgs" firstAttribute="firstBaseline" secondItem="Xa4-8N-mZ7" secondAttribute="firstBaseline" id="hLO-Fp-NkJ"/>
+                            <constraint firstItem="0uA-hL-5FA" firstAttribute="firstBaseline" secondItem="Egw-mq-wc4" secondAttribute="firstBaseline" id="r3B-6R-swZ"/>
+                            <constraint firstItem="m0E-ap-fqN" firstAttribute="leading" secondItem="FAj-6p-qrM" secondAttribute="leading" id="wjr-4b-ARb"/>
+                            <constraint firstItem="jWW-EP-Zk5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0uA-hL-5FA" secondAttribute="trailing" constant="8" symbolic="YES" id="xgZ-gJ-yDX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorIcon" destination="m0E-ap-fqN" id="E72-N9-Ydm"/>
+                        <outlet property="launchAtLogin" destination="Sa2-vP-heR" id="5UI-IS-Yib"/>
+                        <outlet property="notificationSound" destination="0xl-4G-Sgs" id="Kot-CN-3lV"/>
+                        <outlet property="notificationsDisabled" destination="jWW-EP-Zk5" id="GMx-67-OAS"/>
+                        <outlet property="notifyBehavior" destination="0uA-hL-5FA" id="RsV-cA-573"/>
+                        <outlet property="showMenuBar" destination="FAj-6p-qrM" id="0YE-5v-OeL"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="716"/>
+        </scene>
+    </scenes>
+</document>

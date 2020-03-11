@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colorIcon</key>
+	<false/>
+	<key>notificationSound</key>
+	<string>Default</string>
+	<key>notificationBehaviour</key>
+	<string>Both</string>
+	<key>launchAtLogin</key>
+	<false/>
+</dict>
+</plist>
