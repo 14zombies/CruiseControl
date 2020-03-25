@@ -8,26 +8,22 @@
 
 import Cocoa
 import ServiceManagement
-import UserNotifications
 
-class Preferences{
+
+final class Preferences{
     
     private let uDefaults = UserDefaults.standard
     
     private static let defaultPrefs: [String: Any] = [
-        "monoIcon": true,
-        "notificationSound": "Default",
-        "notificationBehaviour": "Both",
         "launchAtLogin": false,
+        "monoIcon": true,
+        "notificationBehaviour": "Both",
+        "notificationSound": "Default",
         "showDock": false
     ]
     
-    var isMenuIconMono: Bool { didSet{
-        uDefaults.set(isMenuIconMono, forKey: "monoIcon")
-    }}
-    
-    var showMenu: Bool { didSet{
-        uDefaults.set(showMenu, forKey: "showMenu")
+    var isMonoIcon: Bool { didSet{
+        uDefaults.set(isMonoIcon, forKey: "monoIcon")
     }}
     
     var launchAtLogin: Bool { didSet{
@@ -66,9 +62,15 @@ class Preferences{
         return names
     }}
     
+    var showMenu: Bool { didSet{
+        uDefaults.set(showMenu, forKey: "showMenu")
+    }}
+    
+    
+    
     init(){
         Preferences.registerDefaults()
-        isMenuIconMono = uDefaults.bool(forKey: "monoIcon")
+        isMonoIcon = uDefaults.bool(forKey: "monoIcon")
         launchAtLogin = uDefaults.bool(forKey: "launchAtLogin")
         if let behaviourString = uDefaults.string(forKey: "notificationBehaviour"), let notificationBehaviour = NotifyBehaviour(rawValue: behaviourString) {
             self.notificationBehaviour = notificationBehaviour

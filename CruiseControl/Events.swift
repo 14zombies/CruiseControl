@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class Events: NSObject{
+final class Events: NSObject{
     
     weak var notificationDelegate: Notifying?
     fileprivate var globalEventMonitor: Any?

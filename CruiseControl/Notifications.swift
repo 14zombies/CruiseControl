@@ -9,7 +9,7 @@
 import Cocoa
 import UserNotifications
 
-class Notifications: NSObject {
+final class Notifications: NSObject {
 
     private let currentNotification = UNUserNotificationCenter.current()
     
@@ -33,13 +33,16 @@ class Notifications: NSObject {
                 self?.sendNotification(with: message, soundNamed: sound)
             }
         }
+        
     }
 
     private func sendNotification(with message: String, soundNamed: String) {
 
         // Create Notification content
         let notificationContent = UNMutableNotificationContent()
-        notificationContent.title = message
+        notificationContent.title = "Cruise Control"
+        notificationContent.body = message
+
         
         let sound = UNNotificationSoundName(soundNamed)
         if soundNamed == "None"{

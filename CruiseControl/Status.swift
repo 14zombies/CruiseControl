@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import UserNotifications
 
 final class Status {
 
@@ -69,7 +68,7 @@ final class Status {
         if let launchAtLoginIndex = statusBarItem.menu?.indexOfItem(withTarget: self, andAction: #selector(setLaunchAtLogin)){
             statusBarItem.menu?.item(at: launchAtLoginIndex)?.state = preferences.launchAtLogin ? .on : .off
         }
-        statusBarItem.button?.image = setStatusBarImage(preferences.isMenuIconMono)
+        statusBarItem.button?.image = setStatusBarImage(preferences.isMonoIcon)
     }
     
     private func didChangePreference(){

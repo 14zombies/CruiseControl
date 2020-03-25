@@ -10,11 +10,11 @@ import Cocoa
 
 class PreferencesViewController: NSViewController {
     
-    @IBOutlet weak var colorIcon: NSButton!
     @IBOutlet weak var launchAtLogin: NSButton!
-    @IBOutlet weak var notifyBehavior: NSPopUpButton!
-    @IBOutlet weak var notificationSound: NSPopUpButton!
-    @IBOutlet weak var notificationsDisabled: NSTextField!
+    @IBOutlet weak var monoIcon: NSButton!
+    @IBOutlet weak var notificationsBehavior: NSPopUpButton!
+    @IBOutlet weak var notificationsPreferences: NSButton!
+    @IBOutlet weak var notificationsSound: NSPopUpButton!
     @IBOutlet weak var showMenuBar: NSButton!
     
     override func viewDidLoad() {
@@ -28,42 +28,19 @@ class PreferencesViewController: NSViewController {
     
     @objc func updateUI(){
         if let preferences = self.representedObject as? Preferences {
-            self.colorIcon.state = preferences.isMenuIconMono ? .on : .off
             self.launchAtLogin.state = preferences.launchAtLogin ? .on : .off
-            self.notifyBehavior.item(withTitle: preferences.notificationBehaviour.rawValue)?.state = .on
-            self.notifyBehavior.selectItem(withTitle: preferences.notificationBehaviour.rawValue)
+            self.monoIcon.state = preferences.isMonoIcon ? .on : .off
+            self.notificationsBehavior.item(withTitle: preferences.notificationBehaviour.rawValue)?.state = .on
+            self.notificationsBehavior.selectItem(withTitle: preferences.notificationBehaviour.rawValue)
             self.updateNotificationSoundPopupButton(items: preferences.notificationSounds, selected: preferences.notificationSound)
-            self.notificationsDisabled.isHidden = preferences.notificationsGranted
             self.showMenuBar.state = preferences.showMenu ? .on : .off
         }
     }
     
     func updateNotificationSoundPopupButton(items: [String], selected: String){
-        self.notificationSound.removeAllItems()
-        self.notificationSound.addItems(withTitles: items)
-        self.notificationSound.select(self.notificationSound.item(withTitle: selected))
-    }
-    
-    @IBAction func didChangeColorIcon(_ sender: Any) {
-        if let preferences = representedObject as? Preferences{
-            if colorIcon.state == .on {
-                preferences.isMenuIconMono = true
-            } else {
-                preferences.isMenuIconMono = false
-            }
-            didChangePreference()
-        }
-    }
-    
-    @IBAction func didChangeMenuBarIcon(_ sender: Any) {
-        if let prefereneces = representedObject as? Preferences{
-            if showMenuBar.state == .on {
-                prefereneces.showMenu = true
-            } else {
-                prefereneces.showMenu = false
-            }
-            didChangePreference()
-        }
+        self.notificationsSound.removeAllItems()
+        self.notificationsSound.addItems(withTitles: items)
+        self.notificationsSound.select(self.notificationsSound.item(withTitle: selected))
     }
     
     @IBAction func didChangeLaunchAtLogin(_ sender: Any) {
@@ -76,21 +53,49 @@ class PreferencesViewController: NSViewController {
             didChangePreference()
         }
     }
+   
+    @IBAction func didChangeShowMenuBarIcon(_ sender: Any) {
+        if let prefereneces = representedObject as? Preferences{
+            if showMenuBar.state == .on {
+                prefereneces.showMenu = true
+            } else {
+                prefereneces.showMenu = false
+            }
+            didChangePreference()
+        }
+    }
+
+    @IBAction func didChangeMonoIcon(_ sender: Any) {
+        if let preferences = representedObject as? Preferences{
+            if monoIcon.state == .on {
+                preferences.isMonoIcon = true
+            } else {
+                preferences.isMonoIcon = false
+            }
+            didChangePreference()
+        }
+    }
     
-    @IBAction func didChangeNotifyBehavior(_ sender: Any) {
-        if let preferences = representedObject as? Preferences, let behaviour = NotifyBehaviour(rawValue: notifyBehavior.selectedItem!.title){
+   
+    @IBAction func didChangeNotificationsBehavior(_ sender: Any) {
+        if let preferences = representedObject as? Preferences, let behaviour = NotifyBehaviour(rawValue: notificationsBehavior.selectedItem!.title){
             preferences.notificationBehaviour = behaviour
             didChangePreference()
         }
     }
     
-    @IBAction func didChangeNotificationSound(_ sender: Any) {
-        if let preferences = representedObject as? Preferences, let selectedItem = notificationSound.selectedItem?.title{
+    @IBAction func didChangeNotificationsSound(_ sender: Any) {
+        if let preferences = representedObject as? Preferences, let selectedItem = notificationsSound.selectedItem?.title{
             preferences.notificationSound = selectedItem
             updateNotificationSoundPopupButton(items: preferences.notificationSounds, selected: selectedItem)
             didChangePreference()
         }
         
+    }
+    
+    @IBAction func didClickNotificationsPreferences(_ sender: Any) {
+        guard let prefpaneUrl = URL(string: "x-apple.systempreferences:com.apple.preference.notifications") else { return }
+        NSWorkspace.shared.open(prefpaneUrl)
     }
     
     @IBAction func didClickAttributionLink(_ sender: Any) {

@@ -35,9 +35,9 @@
 		2E54B44B241982360021D4C2 /* Notifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54B44A241982360021D4C2 /* Notifying.swift */; };
 		2E68FA9E24225C26003DBEC7 /* AboutDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E68FA9D24225C26003DBEC7 /* AboutDisplaying.swift */; };
 		2E81A9AD241999B2009D5188 /* NotifyBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E81A9AC241999B2009D5188 /* NotifyBehaviour.swift */; };
-		2E9B968F24203B56004C4FF0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B968E24203B56004C4FF0 /* Constants.swift */; };
 		2E9B969224203BFE004C4FF0 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9B969124203BFE004C4FF0 /* Defaults.plist */; };
 		2E9F9222242AB58F0077DF76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B968E24203B56004C4FF0 /* Constants.swift */; };
+		2E9F9227242AE4630077DF76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B968E24203B56004C4FF0 /* Constants.swift */; };
 		2EDAA55F24159F0F00193323 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAA55E24159F0F00193323 /* Events.swift */; };
 		2EF88E232417DAC300490D6B /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF88E222417DAC300490D6B /* Preferences.swift */; };
 		2EF88E252417DD6300490D6B /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF88E242417DD6300490D6B /* Status.swift */; };
@@ -180,7 +180,7 @@
 		2E4A0293240D4EC800A49510 = {
 			isa = PBXGroup;
 			children = (
-				2E9B968E24203B56004C4FF0 /* Constants.swift */,
+				2E9F9226242AE3270077DF76 /* Shared */,
 				2E4A029E240D4EC800A49510 /* CruiseControl */,
 				2E0B33A42418F3ED00FF4238 /* CruiseControlHelper */,
 				2E4A029D240D4EC800A49510 /* Products */,
@@ -233,6 +233,14 @@
 				2E1E17D4241A9A7E005D0E9A /* Sounds */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2E9F9226242AE3270077DF76 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2E9B968E24203B56004C4FF0 /* Constants.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,9 +374,9 @@
 				2E54B44924193D2A0021D4C2 /* CruiseController.swift in Sources */,
 				2EF88E252417DD6300490D6B /* Status.swift in Sources */,
 				2EF88E272417DF3D00490D6B /* Notifications.swift in Sources */,
-				2E9B968F24203B56004C4FF0 /* Constants.swift in Sources */,
 				2E10B6F624283D0D000130C4 /* Notification.Name.swift in Sources */,
 				2E4A02A2240D4EC800A49510 /* PreferencesWindowController.swift in Sources */,
+				2E9F9227242AE4630077DF76 /* Constants.swift in Sources */,
 				2E68FA9E24225C26003DBEC7 /* AboutDisplaying.swift in Sources */,
 				2EDAA55F24159F0F00193323 /* Events.swift in Sources */,
 				2E00B041241989FC00A7EAB5 /* PreferencesDisplaying.swift in Sources */,

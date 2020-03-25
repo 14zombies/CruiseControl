@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class CruiseController {
+final class CruiseController {
             
     fileprivate let events: Events
     fileprivate let notify: Notifications
