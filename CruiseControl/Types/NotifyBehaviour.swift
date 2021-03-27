@@ -8,10 +8,9 @@
 
 import Foundation
 
-
 enum NotifyBehaviour: String, RawRepresentable {
-    case on = "Caps Lock On"
-    case off = "Caps Lock Off"
+    case capsOn = "Caps Lock On"
+    case capsOff = "Caps Lock Off"
     case both = "Both"
     case disabled = "Disabled"
 }

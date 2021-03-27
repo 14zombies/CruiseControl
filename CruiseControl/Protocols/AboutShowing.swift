@@ -1,5 +1,5 @@
 //
-//  AboutDisplaying.swift
+//  AboutShowing.swift
 //  CruiseControl
 //
 //  Created by Calum Crawford on 18/03/2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol AboutDisplaying: AnyObject{
+protocol AboutShowing: AnyObject {
     func showAbout()
 }

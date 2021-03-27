@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,12 +95,12 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="PreferencesViewController" customModule="Cruise_Control" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="476" height="242"/>
+                    <view key="view" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="476" height="246"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Egw-mq-wc4">
-                                <rect key="frame" x="121" y="208" width="51" height="16"/>
+                                <rect key="frame" x="122" y="213" width="51" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Trigger:" id="75N-nn-3pc">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -109,7 +108,7 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0uA-hL-5FA">
-                                <rect key="frame" x="176" y="202" width="125" height="25"/>
+                                <rect key="frame" x="176" y="206" width="126" height="25"/>
                                 <popUpButtonCell key="cell" type="push" title="Both" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" selectedItem="C9y-Bg-gNc" id="GYA-Le-n72">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
@@ -122,12 +121,13 @@
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
+                                <accessibility description="Select Notification Trigger"/>
                                 <connections>
                                     <action selector="didChangeNotificationsBehavior:" target="XfG-lQ-9wD" id="a1k-xs-bYI"/>
                                 </connections>
                             </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xa4-8N-mZ7">
-                                <rect key="frame" x="52" y="177" width="120" height="16"/>
+                                <rect key="frame" x="52" y="183" width="121" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Notification Sound:" id="DWM-NK-5hV">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -135,7 +135,7 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0xl-4G-Sgs">
-                                <rect key="frame" x="176" y="171" width="125" height="25"/>
+                                <rect key="frame" x="176" y="176" width="126" height="25"/>
                                 <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="tbT-d3-nBT" id="4CU-Jg-dBw" userLabel="Default">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
@@ -145,15 +145,16 @@
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
+                                <accessibility description="Select Notification Sound"/>
                                 <connections>
                                     <action selector="didChangeNotificationsSound:" target="XfG-lQ-9wD" id="PAN-qo-XeW"/>
                                 </connections>
                             </popUpButton>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="OHG-sj-bre">
-                                <rect key="frame" x="20" y="141" width="436" height="5"/>
+                                <rect key="frame" x="20" y="147" width="436" height="5"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kgR-aU-wSU">
-                                <rect key="frame" x="110" y="112" width="62" height="16"/>
+                                <rect key="frame" x="111" y="117" width="62" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Interface:" id="nvA-eB-fqW">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -161,17 +162,18 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m0E-ap-fqN">
-                                <rect key="frame" x="176" y="91" width="221" height="18"/>
-                                <buttonCell key="cell" type="check" title="Use black &amp; white menu bar icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="j0w-6z-Ift">
+                                <rect key="frame" x="177" y="94" width="204" height="18"/>
+                                <buttonCell key="cell" type="check" title="Use monotone menu bar icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="j0w-6z-Ift">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility description="Show menu bar Icon in black &amp; white."/>
                                 <connections>
                                     <action selector="didChangeMonoIcon:" target="XfG-lQ-9wD" id="IFh-pi-VuI"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yMd-Uy-bT8">
-                                <rect key="frame" x="119" y="62" width="53" height="16"/>
+                                <rect key="frame" x="119" y="63" width="54" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Startup:" id="25i-qn-Mni">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -179,11 +181,12 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sa2-vP-heR">
-                                <rect key="frame" x="176" y="61" width="188" height="18"/>
+                                <rect key="frame" x="177" y="62" width="192" height="18"/>
                                 <buttonCell key="cell" type="check" title="Open automatically at login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="pzD-fp-B0K">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility description="Start Cruise control automatically at login"/>
                                 <connections>
                                     <action selector="didChangeLaunchAtLogin:" target="XfG-lQ-9wD" id="WSq-ug-1so"/>
                                 </connections>
@@ -192,7 +195,7 @@
                                 <rect key="frame" x="20" y="44" width="436" height="5"/>
                             </box>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AtN-Ha-tjF">
-                                <rect key="frame" x="93" y="16" width="290" height="14"/>
+                                <rect key="frame" x="97" y="16" width="282" height="14"/>
                                 <buttonCell key="cell" type="inline" title="Icon made by Smashicons from www.flaticon.com" bezelStyle="inline" alignment="center" imageScaling="proportionallyDown" inset="2" id="JqD-3T-dPh">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="smallSystemBold"/>
@@ -202,21 +205,23 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FAj-6p-qrM">
-                                <rect key="frame" x="176" y="111" width="145" height="18"/>
+                                <rect key="frame" x="177" y="116" width="149" height="18"/>
                                 <buttonCell key="cell" type="check" title="Show menu bar icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="M19-4f-k5b">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility description="Show the menu bar icon"/>
                                 <connections>
                                     <action selector="didChangeShowMenuBarIcon:" target="XfG-lQ-9wD" id="MXX-1R-ANL"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kul-MA-hCG">
-                                <rect key="frame" x="178" y="152" width="163" height="14"/>
+                                <rect key="frame" x="179" y="158" width="155.5" height="14"/>
                                 <buttonCell key="cell" type="inline" title="Notification Preferences" bezelStyle="inline" image="NSFollowLinkFreestandingTemplate" imagePosition="trailing" alignment="left" inset="2" id="ZDp-OJ-c0w">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="smallSystemBold"/>
                                 </buttonCell>
+                                <accessibility description="Open System Notification Preferences"/>
                                 <connections>
                                     <action selector="didClickNotificationsPreferences:" target="XfG-lQ-9wD" id="Jgd-07-D0i"/>
                                 </connections>
@@ -283,6 +288,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NSFollowLinkFreestandingTemplate" width="14" height="14"/>
+        <image name="NSFollowLinkFreestandingTemplate" width="15" height="15"/>
     </resources>
 </document>

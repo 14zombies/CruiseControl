@@ -8,15 +8,12 @@
 
 import Foundation
 
-class Constants{
-    static var bundleID: String {
-           if let bundleID = Bundle.main.bundleIdentifier {
-               return bundleID
-           }
-           fatalError()
+class Constants {
+
+    static var appName: String {
+        Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String ?? "Cruise Control"
     }
     
-    static var appName: String{
-        Bundle.main.infoDictionary![kCFBundleNameKey as String] as! String
-    }
+    static var mainBundleID: String = "com.somevideotapes.CruiseControl"
+    static var helperBundleID: String = "com.somevideotapes.CruiseControlHelper"
 }

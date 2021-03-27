@@ -11,21 +11,19 @@ import Cocoa
 @NSApplicationMain
 class HelperAppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let runningApps = NSWorkspace.shared.runningApplications
         let isHelperRunning = runningApps.filter {
-            $0.bundleIdentifier == Constants.bundleID
+            $0.bundleIdentifier == Constants.helperBundleID
         }
-        
+
         if isHelperRunning.count > 1 {
             debugPrint("\(Constants.appName) is already running. Terminating")
             NSApp.terminate(nil)
         }
-        
+
         let isRunning = runningApps.contains {
-            $0.bundleIdentifier == "com.14zombies.CruiseControl"
+            $0.bundleIdentifier == Constants.mainBundleID
         }
 
         if !isRunning {
@@ -33,9 +31,10 @@ class HelperAppDelegate: NSObject, NSApplicationDelegate {
             for _ in 1...4 {
                 path = path.deletingLastPathComponent as NSString
             }
-            NSWorkspace.shared.launchApplication(path as String)
+            let filePathUrl = URL(fileURLWithPath: path as String)
+            
+            NSWorkspace.shared.openApplication(at: filePathUrl, configuration: NSWorkspace.OpenConfiguration())
         }
     }
 
 }
-

@@ -7,41 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E00B041241989FC00A7EAB5 /* PreferencesDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E00B040241989FC00A7EAB5 /* PreferencesDisplaying.swift */; };
+		2E00B041241989FC00A7EAB5 /* PreferencesShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E00B040241989FC00A7EAB5 /* PreferencesShowing.swift */; };
 		2E0B33A62418F3ED00FF4238 /* HelperAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B33A52418F3ED00FF4238 /* HelperAppDelegate.swift */; };
 		2E0B33AA2418F3EE00FF4238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0B33A92418F3EE00FF4238 /* Assets.xcassets */; };
 		2E0B33AD2418F3EE00FF4238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0B33AB2418F3EE00FF4238 /* Main.storyboard */; };
 		2E0B33B52418F59F00FF4238 /* Cruise Control Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E0B33A32418F3ED00FF4238 /* Cruise Control Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2E10B6F624283D0D000130C4 /* Notification.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E10B6F524283D0D000130C4 /* Notification.Name.swift */; };
-		2E1E17E3241A9A91005D0E9A /* Hero.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17D5241A9A90005D0E9A /* Hero.aiff */; };
-		2E1E17E4241A9A91005D0E9A /* Frog.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17D6241A9A90005D0E9A /* Frog.aiff */; };
-		2E1E17E5241A9A91005D0E9A /* Blow.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17D7241A9A90005D0E9A /* Blow.aiff */; };
-		2E1E17E6241A9A91005D0E9A /* Ping.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17D8241A9A90005D0E9A /* Ping.aiff */; };
-		2E1E17E7241A9A91005D0E9A /* Funk.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17D9241A9A90005D0E9A /* Funk.aiff */; };
-		2E1E17E8241A9A91005D0E9A /* Morse.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17DA241A9A90005D0E9A /* Morse.aiff */; };
-		2E1E17E9241A9A91005D0E9A /* Purr.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17DB241A9A90005D0E9A /* Purr.aiff */; };
-		2E1E17EA241A9A91005D0E9A /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17DC241A9A90005D0E9A /* Pop.aiff */; };
-		2E1E17EB241A9A91005D0E9A /* Tink.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17DD241A9A90005D0E9A /* Tink.aiff */; };
-		2E1E17EC241A9A91005D0E9A /* Glass.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17DE241A9A90005D0E9A /* Glass.aiff */; };
-		2E1E17ED241A9A91005D0E9A /* Sosumi.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17DF241A9A91005D0E9A /* Sosumi.aiff */; };
-		2E1E17EE241A9A91005D0E9A /* Basso.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17E0241A9A91005D0E9A /* Basso.aiff */; };
-		2E1E17EF241A9A91005D0E9A /* Bottle.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17E1241A9A91005D0E9A /* Bottle.aiff */; };
-		2E1E17F0241A9A91005D0E9A /* Submarine.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E17E2241A9A91005D0E9A /* Submarine.aiff */; };
+		2E0BCDA3260F887E003B3435 /* PreferencesDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BCDA2260F887E003B3435 /* PreferencesDisplaying.swift */; };
+		2E0BCDA9260F8CFB003B3435 /* NotificationPermissionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BCDA8260F8CFB003B3435 /* NotificationPermissionState.swift */; };
+		2E0BCDB5260F8E49003B3435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A02A5240D4EC900A49510 /* Main.storyboard */; };
 		2E4A02A0240D4EC800A49510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A029F240D4EC800A49510 /* AppDelegate.swift */; };
 		2E4A02A2240D4EC800A49510 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A02A1240D4EC800A49510 /* PreferencesWindowController.swift */; };
 		2E4A02A4240D4EC900A49510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A02A3240D4EC900A49510 /* Assets.xcassets */; };
-		2E4A02A7240D4EC900A49510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A02A5240D4EC900A49510 /* Main.storyboard */; };
 		2E54B44924193D2A0021D4C2 /* CruiseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54B44824193D2A0021D4C2 /* CruiseController.swift */; };
 		2E54B44B241982360021D4C2 /* Notifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54B44A241982360021D4C2 /* Notifying.swift */; };
-		2E68FA9E24225C26003DBEC7 /* AboutDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E68FA9D24225C26003DBEC7 /* AboutDisplaying.swift */; };
+		2E68FA9E24225C26003DBEC7 /* AboutShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E68FA9D24225C26003DBEC7 /* AboutShowing.swift */; };
 		2E81A9AD241999B2009D5188 /* NotifyBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E81A9AC241999B2009D5188 /* NotifyBehaviour.swift */; };
-		2E9B969224203BFE004C4FF0 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9B969124203BFE004C4FF0 /* Defaults.plist */; };
 		2E9F9222242AB58F0077DF76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B968E24203B56004C4FF0 /* Constants.swift */; };
 		2E9F9227242AE4630077DF76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B968E24203B56004C4FF0 /* Constants.swift */; };
-		2EDAA55F24159F0F00193323 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAA55E24159F0F00193323 /* Events.swift */; };
+		2EDAA55F24159F0F00193323 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAA55E24159F0F00193323 /* EventController.swift */; };
 		2EF88E232417DAC300490D6B /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF88E222417DAC300490D6B /* Preferences.swift */; };
-		2EF88E252417DD6300490D6B /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF88E242417DD6300490D6B /* Status.swift */; };
-		2EF88E272417DF3D00490D6B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF88E262417DF3D00490D6B /* Notifications.swift */; };
+		2EF88E252417DD6300490D6B /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF88E242417DD6300490D6B /* StatusMenuController.swift */; };
+		2EF88E272417DF3D00490D6B /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF88E262417DF3D00490D6B /* NotificationsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,28 +53,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2E00B040241989FC00A7EAB5 /* PreferencesDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesDisplaying.swift; sourceTree = "<group>"; };
+		2E00B040241989FC00A7EAB5 /* PreferencesShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesShowing.swift; sourceTree = "<group>"; };
 		2E0B33A32418F3ED00FF4238 /* Cruise Control Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cruise Control Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E0B33A52418F3ED00FF4238 /* HelperAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAppDelegate.swift; sourceTree = "<group>"; };
 		2E0B33A92418F3EE00FF4238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E0B33AC2418F3EE00FF4238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E0B33AE2418F3EE00FF4238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E0B33AF2418F3EE00FF4238 /* CruiseControlHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CruiseControlHelper.entitlements; sourceTree = "<group>"; };
-		2E10B6F524283D0D000130C4 /* Notification.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.Name.swift; sourceTree = "<group>"; };
-		2E1E17D5241A9A90005D0E9A /* Hero.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Hero.aiff; sourceTree = "<group>"; };
-		2E1E17D6241A9A90005D0E9A /* Frog.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Frog.aiff; sourceTree = "<group>"; };
-		2E1E17D7241A9A90005D0E9A /* Blow.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Blow.aiff; sourceTree = "<group>"; };
-		2E1E17D8241A9A90005D0E9A /* Ping.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Ping.aiff; sourceTree = "<group>"; };
-		2E1E17D9241A9A90005D0E9A /* Funk.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Funk.aiff; sourceTree = "<group>"; };
-		2E1E17DA241A9A90005D0E9A /* Morse.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Morse.aiff; sourceTree = "<group>"; };
-		2E1E17DB241A9A90005D0E9A /* Purr.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Purr.aiff; sourceTree = "<group>"; };
-		2E1E17DC241A9A90005D0E9A /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
-		2E1E17DD241A9A90005D0E9A /* Tink.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Tink.aiff; sourceTree = "<group>"; };
-		2E1E17DE241A9A90005D0E9A /* Glass.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Glass.aiff; sourceTree = "<group>"; };
-		2E1E17DF241A9A91005D0E9A /* Sosumi.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Sosumi.aiff; sourceTree = "<group>"; };
-		2E1E17E0241A9A91005D0E9A /* Basso.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Basso.aiff; sourceTree = "<group>"; };
-		2E1E17E1241A9A91005D0E9A /* Bottle.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Bottle.aiff; sourceTree = "<group>"; };
-		2E1E17E2241A9A91005D0E9A /* Submarine.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Submarine.aiff; sourceTree = "<group>"; };
+		2E0BCDA2260F887E003B3435 /* PreferencesDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesDisplaying.swift; sourceTree = "<group>"; };
+		2E0BCDA8260F8CFB003B3435 /* NotificationPermissionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermissionState.swift; sourceTree = "<group>"; };
 		2E4A029C240D4EC800A49510 /* Cruise Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cruise Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4A029F240D4EC800A49510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E4A02A1240D4EC800A49510 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
@@ -97,15 +70,14 @@
 		2E4A02A8240D4EC900A49510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E54B44824193D2A0021D4C2 /* CruiseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CruiseController.swift; sourceTree = "<group>"; };
 		2E54B44A241982360021D4C2 /* Notifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifying.swift; sourceTree = "<group>"; };
-		2E68FA9D24225C26003DBEC7 /* AboutDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDisplaying.swift; sourceTree = "<group>"; };
+		2E68FA9D24225C26003DBEC7 /* AboutShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutShowing.swift; sourceTree = "<group>"; };
 		2E81A9AC241999B2009D5188 /* NotifyBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyBehaviour.swift; sourceTree = "<group>"; };
 		2E9B968E24203B56004C4FF0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		2E9B969124203BFE004C4FF0 /* Defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
-		2EDAA55E24159F0F00193323 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		2EDAA55E24159F0F00193323 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		2EEB5A0D2418F95D00495B6D /* CruiseControl.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CruiseControl.entitlements; sourceTree = "<group>"; };
 		2EF88E222417DAC300490D6B /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
-		2EF88E242417DD6300490D6B /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
-		2EF88E262417DF3D00490D6B /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		2EF88E242417DD6300490D6B /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		2EF88E262417DF3D00490D6B /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +101,10 @@
 		2E00B04224198A1700A7EAB5 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				2E00B040241989FC00A7EAB5 /* PreferencesDisplaying.swift */,
-				2E68FA9D24225C26003DBEC7 /* AboutDisplaying.swift */,
+				2E00B040241989FC00A7EAB5 /* PreferencesShowing.swift */,
+				2E68FA9D24225C26003DBEC7 /* AboutShowing.swift */,
 				2E54B44A241982360021D4C2 /* Notifying.swift */,
+				2E0BCDA2260F887E003B3435 /* PreferencesDisplaying.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -148,31 +121,19 @@
 			path = CruiseControlHelper;
 			sourceTree = "<group>";
 		};
-		2E10B6F424283CEB000130C4 /* Extensions */ = {
+		2E0BCDAC260F8DAE003B3435 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E10B6F524283D0D000130C4 /* Notification.Name.swift */,
+				2E4A029F240D4EC800A49510 /* AppDelegate.swift */,
+				2EEB5A0D2418F95D00495B6D /* CruiseControl.entitlements */,
+				2E4A02A8240D4EC900A49510 /* Info.plist */,
 			);
-			path = Extensions;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2E1E17D4241A9A7E005D0E9A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				2E1E17E0241A9A91005D0E9A /* Basso.aiff */,
-				2E1E17D7241A9A90005D0E9A /* Blow.aiff */,
-				2E1E17E1241A9A91005D0E9A /* Bottle.aiff */,
-				2E1E17D6241A9A90005D0E9A /* Frog.aiff */,
-				2E1E17D9241A9A90005D0E9A /* Funk.aiff */,
-				2E1E17DE241A9A90005D0E9A /* Glass.aiff */,
-				2E1E17D5241A9A90005D0E9A /* Hero.aiff */,
-				2E1E17DA241A9A90005D0E9A /* Morse.aiff */,
-				2E1E17D8241A9A90005D0E9A /* Ping.aiff */,
-				2E1E17DC241A9A90005D0E9A /* Pop.aiff */,
-				2E1E17DB241A9A90005D0E9A /* Purr.aiff */,
-				2E1E17DF241A9A91005D0E9A /* Sosumi.aiff */,
-				2E1E17E2241A9A91005D0E9A /* Submarine.aiff */,
-				2E1E17DD241A9A90005D0E9A /* Tink.aiff */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -199,21 +160,15 @@
 		2E4A029E240D4EC800A49510 /* CruiseControl */ = {
 			isa = PBXGroup;
 			children = (
-				2E10B6F424283CEB000130C4 /* Extensions */,
+				2E0BCDAC260F8DAE003B3435 /* Supporting Files */,
+				2EE88C7E242E330000C9A9F8 /* Preferences */,
 				2E9B969024203BE9004C4FF0 /* Resources */,
 				2E81A9AE241999B9009D5188 /* Types */,
 				2E00B04224198A1700A7EAB5 /* Protocols */,
-				2E4A029F240D4EC800A49510 /* AppDelegate.swift */,
 				2E54B44824193D2A0021D4C2 /* CruiseController.swift */,
-				2EDAA55E24159F0F00193323 /* Events.swift */,
-				2EF88E262417DF3D00490D6B /* Notifications.swift */,
-				2EF88E242417DD6300490D6B /* Status.swift */,
-				2EF88E222417DAC300490D6B /* Preferences.swift */,
-				2E4A02A1240D4EC800A49510 /* PreferencesWindowController.swift */,
-				2E4A02A5240D4EC900A49510 /* Main.storyboard */,
-				2E4A02A3240D4EC900A49510 /* Assets.xcassets */,
-				2E4A02A8240D4EC900A49510 /* Info.plist */,
-				2EEB5A0D2418F95D00495B6D /* CruiseControl.entitlements */,
+				2EDAA55E24159F0F00193323 /* EventController.swift */,
+				2EF88E262417DF3D00490D6B /* NotificationsController.swift */,
+				2EF88E242417DD6300490D6B /* StatusMenuController.swift */,
 			);
 			path = CruiseControl;
 			sourceTree = "<group>";
@@ -222,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				2E81A9AC241999B2009D5188 /* NotifyBehaviour.swift */,
+				2E0BCDA8260F8CFB003B3435 /* NotificationPermissionState.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -229,7 +185,7 @@
 		2E9B969024203BE9004C4FF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2E9B969124203BFE004C4FF0 /* Defaults.plist */,
+				2E4A02A3240D4EC900A49510 /* Assets.xcassets */,
 				2E1E17D4241A9A7E005D0E9A /* Sounds */,
 			);
 			path = Resources;
@@ -241,6 +197,16 @@
 				2E9B968E24203B56004C4FF0 /* Constants.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		2EE88C7E242E330000C9A9F8 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				2EF88E222417DAC300490D6B /* Preferences.swift */,
+				2E4A02A1240D4EC800A49510 /* PreferencesWindowController.swift */,
+				2E4A02A5240D4EC900A49510 /* Main.storyboard */,
+			);
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +255,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Calum Crawford";
 				TargetAttributes = {
 					2E0B33A22418F3ED00FF4238 = {
@@ -333,23 +299,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9B969224203BFE004C4FF0 /* Defaults.plist in Resources */,
-				2E1E17EC241A9A91005D0E9A /* Glass.aiff in Resources */,
-				2E1E17E7241A9A91005D0E9A /* Funk.aiff in Resources */,
-				2E1E17E3241A9A91005D0E9A /* Hero.aiff in Resources */,
+				2E0BCDB5260F8E49003B3435 /* Main.storyboard in Resources */,
 				2E4A02A4240D4EC900A49510 /* Assets.xcassets in Resources */,
-				2E1E17EE241A9A91005D0E9A /* Basso.aiff in Resources */,
-				2E1E17ED241A9A91005D0E9A /* Sosumi.aiff in Resources */,
-				2E1E17EA241A9A91005D0E9A /* Pop.aiff in Resources */,
-				2E1E17EF241A9A91005D0E9A /* Bottle.aiff in Resources */,
-				2E1E17F0241A9A91005D0E9A /* Submarine.aiff in Resources */,
-				2E1E17E5241A9A91005D0E9A /* Blow.aiff in Resources */,
-				2E1E17E8241A9A91005D0E9A /* Morse.aiff in Resources */,
-				2E1E17EB241A9A91005D0E9A /* Tink.aiff in Resources */,
-				2E1E17E9241A9A91005D0E9A /* Purr.aiff in Resources */,
-				2E1E17E6241A9A91005D0E9A /* Ping.aiff in Resources */,
-				2E4A02A7240D4EC900A49510 /* Main.storyboard in Resources */,
-				2E1E17E4241A9A91005D0E9A /* Frog.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,17 +320,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0BCDA3260F887E003B3435 /* PreferencesDisplaying.swift in Sources */,
 				2EF88E232417DAC300490D6B /* Preferences.swift in Sources */,
 				2E54B44B241982360021D4C2 /* Notifying.swift in Sources */,
 				2E54B44924193D2A0021D4C2 /* CruiseController.swift in Sources */,
-				2EF88E252417DD6300490D6B /* Status.swift in Sources */,
-				2EF88E272417DF3D00490D6B /* Notifications.swift in Sources */,
-				2E10B6F624283D0D000130C4 /* Notification.Name.swift in Sources */,
+				2E0BCDA9260F8CFB003B3435 /* NotificationPermissionState.swift in Sources */,
+				2EF88E252417DD6300490D6B /* StatusMenuController.swift in Sources */,
+				2EF88E272417DF3D00490D6B /* NotificationsController.swift in Sources */,
 				2E4A02A2240D4EC800A49510 /* PreferencesWindowController.swift in Sources */,
 				2E9F9227242AE4630077DF76 /* Constants.swift in Sources */,
-				2E68FA9E24225C26003DBEC7 /* AboutDisplaying.swift in Sources */,
-				2EDAA55F24159F0F00193323 /* Events.swift in Sources */,
-				2E00B041241989FC00A7EAB5 /* PreferencesDisplaying.swift in Sources */,
+				2E68FA9E24225C26003DBEC7 /* AboutShowing.swift in Sources */,
+				2EDAA55F24159F0F00193323 /* EventController.swift in Sources */,
+				2E00B041241989FC00A7EAB5 /* PreferencesShowing.swift in Sources */,
 				2E4A02A0240D4EC800A49510 /* AppDelegate.swift in Sources */,
 				2E81A9AD241999B2009D5188 /* NotifyBehaviour.swift in Sources */,
 			);
@@ -412,17 +364,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CruiseControlHelper/CruiseControlHelper.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 74343YMU7Z;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CruiseControlHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2020.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.14zombies.CruiseControlHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somevideotapes.CruiseControlHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -434,17 +388,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CruiseControlHelper/CruiseControlHelper.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 74343YMU7Z;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CruiseControlHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2020.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.14zombies.CruiseControlHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somevideotapes.CruiseControlHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -477,6 +433,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -538,6 +495,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -570,18 +528,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CruiseControl/CruiseControl.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "CruiseControl/Supporting Files/CruiseControl.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 74343YMU7Z;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = CruiseControl/Info.plist;
+				INFOPLIST_FILE = "CruiseControl/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 2020.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.14zombies.CruiseControl;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2021.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somevideotapes.CruiseControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -591,18 +551,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CruiseControl/CruiseControl.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "CruiseControl/Supporting Files/CruiseControl.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 74343YMU7Z;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = CruiseControl/Info.plist;
+				INFOPLIST_FILE = "CruiseControl/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 2020.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.14zombies.CruiseControl;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2021.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somevideotapes.CruiseControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

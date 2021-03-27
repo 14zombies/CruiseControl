@@ -1,5 +1,5 @@
 //
-//  Notifying.swift
+//  PreferencesShowing.swift
 //  CruiseControl
 //
 //  Created by Calum Crawford on 11/03/2020.
@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
-protocol Notifying: AnyObject {
-    func willNotify(keyEnabled: Bool, keyName: String)
+ 
+protocol PreferencesShowing: AnyObject {
+    func showPreferences()
 }
